@@ -14,6 +14,16 @@ Annotation Service - stores annotation documents for each image. Each document c
 Embedding Service - Indexes embedding vectors so images can be found by similarity. Also handles search queries by running FAISS.
 CLI Service - this is the entry point for users to upload and search.
 
+Messages Definition
+
+image.submitted - Fired when a new image is uploaded
+inference.completed - Fired when object detection is done.
+annotation.stored - fired when annotation is written to the document database.
+embedding created - Image is now fully indexed and searchaeable.
+annotaion.corrected - fired when a user corrects a mislabeled annotation.
+query submitted - fired when a userr submits a search query.
+query completed - fired when FAISS search completes.
+
 Topic summary
 
 Topic                 |    Publisher          |    Subscriber(s)
